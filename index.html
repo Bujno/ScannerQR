@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QRCode Scanner</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <canvas hidden="" id="qr-canvas"></canvas>
+    <button id="close-camera-button">X</button>
+
+    <div id="container">
+      <h1>Scanner QR</h1>
+
+      <select name="camera" id="videoSource"> </select>
+      <button id="btn-scan-qr">
+        Scan
+      </button>
+
+      <div id="qr-result" hidden="">
+        <b>Result:</b> <span id="outputData"></span>
+      </div>
+    </div>
+
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./src/qr.js"></script>
+  </body>
+</html>
